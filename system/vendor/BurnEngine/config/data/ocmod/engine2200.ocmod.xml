@@ -1,0 +1,14 @@
+<file path="catalog/controller/module/latest.php">
+    <operation>
+        <search><![CDATA[
+        return $this->load->view('module/latest', $data);
+        ]]></search>
+        <add position="before"><![CDATA[
+        if (!empty($filter_data['intercept_results'])) {
+            TB_Engine::instance()->getThemeData()->db_product_results = $data['products'];
+
+            return;
+        }
+        ]]></add>
+    </operation>
+</file>

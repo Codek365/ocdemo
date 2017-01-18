@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+    <name>BurnEngine</name>
+    <code>BurnEngine</code>
+    <version>{{version}}</version>
+    <author>ThemeBurn Ltd</author>
+    <link>http://www.themeburn.com</link>
+
+    <file path="admin/view/template/common/menu.tpl">
+        <operation>
+            <search><![CDATA[
+            <li id="dashboard"><a href="<?php echo $home; ?>"><i class="fa fa-dashboard fa-fw"></i> <span><?php echo $text_dashboard; ?></span></a></li>
+            ]]></search>
+            <add position="after"><![CDATA[
+            <?php if (isset($this->registry) || isset($registry)): ?>
+            <?php if (!isset($registry)) $registry = $this->registry; ?>
+            <li id="tb_menu_burnengine">
+              <?php if ($registry->get('config')->get('stories_settings')): ?>
+              <a class="parent">
+                <img src="../system/vendor/BurnEngine/admin/view/image/i_oc_menu.png" style="margin: 3px 0 0 0; vertical-align: top;" />
+                <span>BurnEngine</span>
+              </a>
+              <ul>
+                <li><a href="<?php echo $registry->get('url')->link((version_compare(VERSION, '2.2.0.0', '>=') ? 'theme' : 'module') . '/BurnEngine', 'token=' . $registry->get('session')->data['token'], 'SSL'); ?>">Theme Options</a></li>
+                <li><a href="<?php echo $registry->get('url')->link('stories/index', 'token=' . $registry->get('session')->data['token'], 'SSL'); ?>">Stories</a></li>
+              </ul>
+              <?php else: ?>
+              <a href="<?php echo $registry->get('url')->link((version_compare(VERSION, '2.2.0.0', '>=') ? 'theme' : 'module') . '/BurnEngine', 'token=' . $registry->get('session')->data['token'], 'SSL'); ?>">
+                <img src="../system/vendor/BurnEngine/admin/view/image/i_oc_menu.png" style="margin: 3px 0 0 0; vertical-align: top;" />
+                <span>BurnEngine</span>
+              </a>
+              <?php endif; ?>
+            </li>
+            <?php endif; ?>
+            ]]></add>
+        </operation>
+    </file>
+
+    <file path="catalog/model/catalog/product.php">
+        <operation>
+            <search><![CDATA[
+            public function getProducts($data = array()) {
+            ]]></search>
+            <add position="after"><![CDATA[
+            if (!empty($data['intercept_results'])) {
+                return $data['intercept_results'];
+            }
+            ]]></add>
+        </operation>
+    </file>
+
+    <file path="catalog/controller/module/latest.php">
+        <operation>
+            <search><![CDATA[
+            $filter_data = array(
+            ]]></search>
+            <add position="after"><![CDATA[
+            'intercept_results' => class_exists('TB_Engine') && TB_Engine::hasInstance() && TB_Engine::instance()->getThemeData()->get('db_product_results') ? TB_Engine::instance()->getThemeData()->get('db_product_results') : false,
+            ]]></add>
+        </operation>
+    </file>
+
+    <file path="system/engine/event.php">
+        <operation>
+            <search><![CDATA[
+            $this->registry = $registry;
+            ]]></search>
+            <add position="after"><![CDATA[
+            $this->register('model/extension/event/getEvents/after', new Action('common/BurnEngine/onGetEventsAfter'));
+            ]]></add>
+        </operation>
+    </file>
+
+    <file path="system/library/response.php">
+        <operation>
+            <search><![CDATA[
+            if ($this->output) {
+            ]]></search>
+            <add position="before"><![CDATA[
+            if (class_exists('TB_Engine') && TB_Engine::hasInstance()) {
+                $this->output = TB_Engine::instance()->getEventDispatcher()->filter(new sfEvent($this, 'ocResponse:output'), trim($this->output))->getReturnValue();
+            }
+            ]]></add>
+        </operation>
+        <operation>
+            <search><![CDATA[
+            public function redirect($url, $status = 302) {
+            ]]></search>
+            <add position="after"><![CDATA[
+            if (class_exists('TB_Engine') && TB_Engine::hasInstance() && TB_Engine::instance()->getThemeData()->disable_redirect) {
+                return;
+            }
+            ]]></add>
+        </operation>
+    </file>
+
+    <file path="system/library/request.php">
+        <operation>
+            <search><![CDATA[
+            public function __construct() {
+            ]]></search>
+            <add position="after"><![CDATA[
+            if (get_magic_quotes_gpc() && !version_compare(VERSION, '2.1.0.0', '>=')) {
+                function stripslashes_deep($value) {
+                    $value = is_array($value) ? array_map('stripslashes_deep', $value) : stripslashes($value);
+
+                    return $value;
+                }
+
+                $_POST = array_map('stripslashes_deep', $_POST);
+                $_GET = array_map('stripslashes_deep', $_GET);
+                $_COOKIE = array_map('stripslashes_deep', $_COOKIE);
+                $_REQUEST = array_map('stripslashes_deep', $_REQUEST);
+            }
+            ]]></add>
+        </operation>
+    </file>
+
+</modification>

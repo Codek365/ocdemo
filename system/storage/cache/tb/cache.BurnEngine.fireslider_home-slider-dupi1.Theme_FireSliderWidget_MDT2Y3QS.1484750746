@@ -1,0 +1,114 @@
+s:9666:"<div class="mightySlider mightyslider_custom_skin fixed tbLoading">
+  <div class="frame" data-mightyslider="width: 1000, height: 410">
+    <div class="slideelement">
+            <div id="FireSlider_MDT2Y3QS_slide_1" class="ms_slide" data-mightyslider="type: 'image', cover: 'http://ocdemo.host/image/catalog/sample_data/slider/slide_2.jpg', id: 'FireSlider_MDT2Y3QS_slide_1'">
+                        <div class="ms_scene">
+                    <div id="FireSlider_MDT2Y3QS_slide_1_layer_1" class="mSCaption" data-msanimation="{delay: 2700, speed: 500, easing: 'easeOutQuad', style: {top: 290, left: 600, opacity: 1, transform: 'scale(1) rotate(0deg)'}}">
+                                    <a class="btn btn-lg" href="http://themeforest.net/item/pavilion-premium-responsive-opencart-theme/9219645?ref=ThemeBurn" target="_blank">Buy Theme!</a>                                  </div>
+                    <div id="FireSlider_MDT2Y3QS_slide_1_layer_2" class="mSCaption" data-msanimation="{delay: 2700, speed: 500, easing: 'easeOutQuad', style: {top: 240, left: 600, opacity: 1, transform: 'scale(1) rotate(0deg)'}}">
+                                    Shirts and blouses from $10                                  </div>
+                    <div id="FireSlider_MDT2Y3QS_slide_1_layer_3" class="mSCaption" data-msanimation="{delay: 2400, speed: 500, easing: 'easeOutQuad', style: {top: 210, left: 665, opacity: 1, transform: 'scale(1) rotate(0deg)'}}">
+                                    <span class="clear" style="border-bottom: 2px solid #d9c9bb;"></span>                                  </div>
+                    <div id="FireSlider_MDT2Y3QS_slide_1_layer_4" class="mSCaption" data-msanimation="{delay: 2100, speed: 500, easing: 'easeOutQuad', style: {top: 80, left: 600, opacity: 1, transform: 'scale(1) rotate(0deg)'}}">
+                                    <h1 class="tb_main_color">Colorful
+Autumn</h1>                                  </div>
+                    <div id="FireSlider_MDT2Y3QS_slide_1_layer_5" class="mSCaption" data-msanimation="{delay: 2100, speed: 500, easing: 'easeOutQuad', style: {top: 60, left: 600, opacity: 1, transform: 'scale(1) rotate(0deg)'}}">
+                                    New collection                                  </div>
+                    <div id="FireSlider_MDT2Y3QS_slide_1_layer_6" class="mSCaption" data-msanimation="{delay: 1700, speed: 500, easing: 'easeOutQuad', style: {top: 70, left: 350, opacity: 1, transform: 'scale(1) rotate(0deg)'}}">
+                                    <p class="tb_price tb_fancy"><span class="tb_currency s_before">$</span><span class="tb_integer">14</span><span class="tb_decimal_point">.</span><span class="tb_decimal">99</span></p>                                  </div>
+                    <div id="FireSlider_MDT2Y3QS_slide_1_layer_7" class="mSCaption tb_interactive" data-msanimation="{delay: 1400, speed: 500, easing: 'easeOutQuad', style: {top: 60, left: 350, opacity: 1, transform: 'scale(1) rotate(0deg)'}}">
+                                    <img src="http://ocdemo.host/image/catalog/sample_data/slider/slide_2_item_2.png" width="223" height="293" alt="" />
+                                  </div>
+                    <div id="FireSlider_MDT2Y3QS_slide_1_layer_8" class="mSCaption" data-msanimation="{delay: 1100, speed: 500, easing: 'easeOutQuad', style: {bottom: 70, left: 200, opacity: 1, transform: 'scale(1) rotate(0deg)'}}">
+                                    <p class="tb_price tb_fancy"><span class="tb_currency tb_before">$</span><span class="tb_integer">19</span><span class="tb_decimal_point">.</span><span class="tb_decimal">99</span></p>                                  </div>
+                    <div id="FireSlider_MDT2Y3QS_slide_1_layer_9" class="mSCaption tb_interactive" data-msanimation="{delay: 800, speed: 500, easing: 'easeOutQuad', style: {top: 45, left: 70, opacity: 1, transform: 'scale(1) rotate(0deg)'}}">
+                                    <img src="http://ocdemo.host/image/catalog/sample_data/slider/slide_2_item_1.png" width="255" height="317" alt="" />
+                                  </div>
+                  </div>
+                <div id="FireSlider_MDT2Y3QS_slide_1_layer_10" class="mSCaption" data-msanimation="{delay: 400, speed: 500, easing: 'easeOutQuad', style: {right: 0, bottom: 0, opacity: 1, transform: 'scale(1) rotate(0deg)'}}">
+                              <img src="http://ocdemo.host/image/catalog/sample_data/slider/slide_2_layer_1.png" width="225" height="154" alt="" />
+                            </div>
+                <div id="FireSlider_MDT2Y3QS_slide_1_layer_11" class="mSCaption" data-msanimation="{delay: 100, speed: 500, easing: 'easeOutQuad', style: {top: 0, left: 0, opacity: 1, transform: 'scale(1) rotate(0deg)'}}">
+                              <img src="http://ocdemo.host/image/catalog/sample_data/slider/slide_2_layer_2.png" width="178" height="279" alt="" />
+                            </div>
+                              </div>
+            <div id="FireSlider_MDT2Y3QS_slide_2" class="ms_slide" data-mightyslider="type: 'image', cover: 'http://ocdemo.host/image/catalog/sample_data/slider/slide_1.jpg', id: 'FireSlider_MDT2Y3QS_slide_2'">
+                <a href="page-builder" target="_self">
+                        <div class="ms_scene">
+                    <div id="FireSlider_MDT2Y3QS_slide_2_layer_1" class="mSCaption" data-msanimation="{delay: 1500, speed: 500, easing: 'easeOutQuad', style: {top: 55, left: 45, opacity: 1, transform: 'scale(1) rotate(-35deg)'}}">
+                                    <div style="height: 55px;">NEW
+feature!</div>                                  </div>
+                    <div id="FireSlider_MDT2Y3QS_slide_2_layer_2" class="mSCaption" data-msanimation="{delay: 1000, speed: 500, easing: 'easeOutQuad', style: {top: 150, left: 70, opacity: 1, transform: 'scale(1) rotate(0deg)'}}">
+                                    <h1 class="tb_main_color">Page Builder</h1>                                  </div>
+                    <div id="FireSlider_MDT2Y3QS_slide_2_layer_3" class="mSCaption" data-msanimation="{delay: 700, speed: 500, easing: 'easeOutQuad', style: {top: 140, left: 155, opacity: 1, transform: 'scale(1) rotate(0deg)'}}">
+                                    <span class="clear" style="border-bottom: 2px solid #d9d9d9;"></span>                                  </div>
+                    <div id="FireSlider_MDT2Y3QS_slide_2_layer_4" class="mSCaption" data-msanimation="{delay: 400, speed: 500, easing: 'easeOutQuad', style: {top: 100, left: 70, opacity: 1, transform: 'scale(1) rotate(0deg)'}}">
+                                    Introducing the                                  </div>
+                    <div id="FireSlider_MDT2Y3QS_slide_2_layer_5" class="mSCaption" data-msanimation="{delay: 100, speed: 400, easing: 'easeOutQuad', style: {top: 70, left: 70, opacity: 1, transform: 'scale(1) rotate(0deg)'}}">
+                                    <img src="http://ocdemo.host/image/catalog/sample_data/slider/slide_1_layer_1.png" width="270" height="210" alt="" />
+                                  </div>
+                  </div>
+                                </a>
+              </div>
+            <div id="FireSlider_MDT2Y3QS_slide_3" class="ms_slide" data-mightyslider="type: 'video', video: 'http://vimeo.com/76502479', id: 'FireSlider_MDT2Y3QS_slide_3'">
+                        <div class="ms_scene">
+                    <div id="FireSlider_MDT2Y3QS_slide_3_layer_1" class="mSCaption" data-msanimation="{delay: 350, speed: 500, easing: 'easeOutQuad', style: {bottom: 80, left: 0, opacity: 1, transform: 'scale(1) rotate(0deg)'}}">
+                                    <span style="padding: 0 8px; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2); background: rgba(0, 0, 0, 0.5);">Now supported out of the box!</span>                                  </div>
+                    <div id="FireSlider_MDT2Y3QS_slide_3_layer_2" class="mSCaption" data-msanimation="{delay: 150, speed: 500, easing: 'easeOutQuad', style: {top: 65, left: 0, opacity: 1, transform: 'scale(1) rotate(0deg)'}}">
+                                    <span class="tb_main_color_bg" style="padding: 0 8px; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);">Video in Slider</span>                                  </div>
+                  </div>
+                              </div>
+          </div>
+  </div>
+</div>
+
+<div class="tb_placeholder"></div>
+
+
+
+<script type="text/javascript" data-prepend="1">
+tbApp.onScriptLoaded(function() {
+  setTimeout(function() {
+
+      
+      var $slider = new mightySlider(
+          '#FireSlider_MDT2Y3QS .mightySlider .frame',
+          {
+              speed:       500,
+              easing:      'easeOutQuad',
+              startRandom: 0,
+              viewport:    'fill',
+              autoScale:   1,
+              navigation: {
+                  slideSize:      '100%',
+                  keyboardNavBy:  'slides'
+              },
+                            commands: {
+                  pages: 1,
+                  buttons: 1
+              },
+              pages: {
+                activateOn: 'click'
+              },
+              dragging: {
+                  releaseSwing: 1,
+                  swingSync:     5,
+                  swingSpeed:    0.2
+              },
+                                          classes: {
+                loaderClass:   'tb_loading_bar'
+              }
+          }
+      ).init();
+
+            $slider.one('coverInserted', function (eventName) {
+          $('#FireSlider_MDT2Y3QS .mightySlider').removeClass('tbLoading');
+      });
+      
+      
+      
+      
+      
+  }, 250);
+});
+</script>";

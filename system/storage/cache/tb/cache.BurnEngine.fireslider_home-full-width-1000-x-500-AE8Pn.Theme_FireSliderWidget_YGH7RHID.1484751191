@@ -1,0 +1,95 @@
+s:6319:"<div class="mightySlider mightyslider_custom_skin fullwidth tbLoading">
+  <div class="frame" data-mightyslider="width: 1000, height: 500">
+    <div class="slideelement">
+            <div id="FireSlider_YGH7RHID_slide_1" class="ms_slide" data-mightyslider="type: 'image', cover: 'http://ocdemo.host/image/catalog/sample_data/slider/slider_2_1_cover.jpg', id: 'FireSlider_YGH7RHID_slide_1'">
+                        <div class="ms_scene">
+                    <div id="FireSlider_YGH7RHID_slide_1_layer_1" class="mSCaption" data-msanimation="{delay: 200, speed: 500, easing: 'easeOutQuad', style: {top: 100, left: 0, opacity: 1, transform: 'scale(1) rotate(0deg)'}}">
+                                    <h1 class="tb_main_color">Advanced <br /> Slider</h1>                                  </div>
+                    <div id="FireSlider_YGH7RHID_slide_1_layer_2" class="mSCaption" data-msanimation="{delay: 1000, speed: 500, easing: 'easeOutQuad', style: {top: 226, left: 100, opacity: 1, transform: 'scale(1) rotate(0deg)'}}">
+                                                                       </div>
+                    <div id="FireSlider_YGH7RHID_slide_1_layer_3" class="mSCaption" data-msanimation="{delay: 600, speed: 500, easing: 'easeOutQuad', style: {top: 70, left: 0, opacity: 1, transform: 'scale(1) rotate(0deg)'}}">
+                                    Fully Responsive                                  </div>
+                    <div id="FireSlider_YGH7RHID_slide_1_layer_4" class="mSCaption" data-msanimation="{delay: 1400, speed: 500, easing: 'easeOutQuad', style: {top: 260, left: 0, opacity: 1, transform: 'scale(1) rotate(0deg)'}}">
+                                    Video and animated <br /> captions support!                                  </div>
+                  </div>
+                              </div>
+            <div id="FireSlider_YGH7RHID_slide_2" class="ms_slide" data-mightyslider="type: 'image', cover: 'http://ocdemo.host/image/catalog/sample_data/slider/slider_2_2_cover.jpg', id: 'FireSlider_YGH7RHID_slide_2'">
+                        <div class="ms_scene">
+                    <div id="FireSlider_YGH7RHID_slide_2_layer_1" class="mSCaption" data-msanimation="{delay: 200, speed: 500, easing: 'easeOutQuad', style: {top: 70, right: 0, opacity: 1, transform: 'scale(1) rotate(0deg)'}}">
+                                    <h1 class="tb_main_color">Custom <br /> Products</h1>                                  </div>
+                    <div id="FireSlider_YGH7RHID_slide_2_layer_2" class="mSCaption" data-msanimation="{delay: 600, speed: 500, easing: 'easeOutQuad', style: {top: 200, right: 150, opacity: 1, transform: 'scale(1) rotate(0deg)'}}">
+                                                                       </div>
+                    <div id="FireSlider_YGH7RHID_slide_2_layer_3" class="mSCaption" data-msanimation="{delay: 1000, speed: 500, easing: 'easeOutQuad', style: {top: 230, right: 50, opacity: 1, transform: 'scale(1) rotate(0deg)'}}">
+                                    Change layout and product options design!                                  </div>
+                  </div>
+                              </div>
+            <div id="FireSlider_YGH7RHID_slide_3" class="ms_slide" data-mightyslider="type: 'image', cover: 'http://ocdemo.host/image/catalog/sample_data/slider/slider_2_3_cover.jpg', id: 'FireSlider_YGH7RHID_slide_3'">
+                        <div class="ms_scene">
+                    <div id="FireSlider_YGH7RHID_slide_3_layer_1" class="mSCaption" data-msanimation="{delay: 200, speed: 500, easing: 'easeOutQuad', style: {top: 70, left: 0, opacity: 1, transform: 'scale(1) rotate(0deg)'}}">
+                                    Premium                                  </div>
+                    <div id="FireSlider_YGH7RHID_slide_3_layer_2" class="mSCaption" data-msanimation="{delay: 600, speed: 500, easing: 'easeOutQuad', style: {top: 100, left: 0, opacity: 1, transform: 'scale(1) rotate(0deg)'}}">
+                                    <h1 class="tb_main_color">Free Support</h1>                                  </div>
+                    <div id="FireSlider_YGH7RHID_slide_3_layer_3" class="mSCaption" data-msanimation="{delay: 1000, speed: 500, easing: 'easeOutQuad', style: {top: 175, left: 150, opacity: 1, transform: 'scale(1) rotate(0deg)'}}">
+                                                                       </div>
+                    <div id="FireSlider_YGH7RHID_slide_3_layer_4" class="mSCaption" data-msanimation="{delay: 1400, speed: 500, easing: 'easeOutQuad', style: {top: 205, left: 50, opacity: 1, transform: 'scale(1) rotate(0deg)'}}">
+                                    Feature and compatibility <br /> updates as well!                                  </div>
+                  </div>
+                              </div>
+          </div>
+  </div>
+</div>
+
+<div class="tb_placeholder"></div>
+
+
+
+<script type="text/javascript" data-prepend="1">
+tbApp.onScriptLoaded(function() {
+  setTimeout(function() {
+
+      
+      var $slider = new mightySlider(
+          '#FireSlider_YGH7RHID .mightySlider .frame',
+          {
+              speed:       500,
+              easing:      'easeOutQuad',
+              startRandom: 0,
+              viewport:    'fill',
+              autoScale:   0,
+              navigation: {
+                  slideSize:      '100%',
+                  keyboardNavBy:  'slides'
+              },
+                            commands: {
+                  pages: 1,
+                  buttons: 1
+              },
+              pages: {
+                activateOn: 'click'
+              },
+              dragging: {
+                  releaseSwing: 1,
+                  swingSync:     5,
+                  swingSpeed:    0.2
+              },
+                                          classes: {
+                loaderClass:   'tb_loading_bar'
+              }
+          }
+      ).init();
+
+            $slider.one('coverInserted', function (eventName) {
+          $('#FireSlider_YGH7RHID .mightySlider').removeClass('tbLoading');
+      });
+      
+      
+            tbUtils.onSizeChange(function() {
+        fireslider_fullwidth_resize($slider, 1000)
+      }, false, false, '#FireSlider_YGH7RHID');
+      fireslider_fullwidth_resize($slider, 1000)
+      
+      
+      
+  }, 250);
+});
+</script>";
